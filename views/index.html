@@ -9,21 +9,40 @@
       href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
     />
     <link href="/public/style.css" rel="stylesheet" type="text/css" />
-  </head>
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=H2HBboxq8awOvOIp82aRG7FLH32qcpjzPNaQ-y2Q10IbGJMHEWdGD3kURYnLeq2hZplnkyEpO8GR8YEuh-QHoCXkl1fLji0IjuXXrT5vJQU" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly91cmwtc2hvcnRlbmVyLW1pY3Jvc2VydmljZS5mcmVlY29kZWNhbXAucm9ja3Mv"/></head>
 
   <body>
     <h1>URL Shortener Microservice</h1>
+    <h2>Short URL Creation</h2>
+    <p>
+      Example: <code>POST [project_url]/api/shorturl</code> -
+      <code>https://www.google.com</code>
+    </p>
     <main>
       <section>
         <form action="api/shorturl" method="POST">
           <fieldset>
             <legend>URL Shortener</legend>
             <label for="url_input">URL:</label>
-            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input
+              id="url_input"
+              type="text"
+              name="url"
+              placeholder="https://www.freecodecamp.org/"
+            />
             <input type="submit" value="POST URL" />
           </fieldset>
         </form>
       </section>
+      <h2>Example Usage:</h2>
+      <a
+        href="https://boilerplate-project-urlshortener-1.daniel-albert26.repl.co/api/shorturl/1"
+      >
+        [this_project_url]/api/shorturl/3
+      </a>
+
+      <h3>Will Redirect to:</h3>
+      <p>https://forum.freecodecamp.org/</p>
     </main>
     <footer>
       <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
